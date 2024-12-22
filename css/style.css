@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Figtree-Italic';
+    src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+}
+  
+@font-face {
+    font-family: 'Figtree-Variable';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root {
+    --background-color: hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 42%);
+    --gray-color : hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100vw;
+    font-family: 'Figtree-Variable';
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    background-color: var(--white-color);
+    gap: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--gray-color);
+    box-shadow: 10px 10px var(--gray-color);
+    margin-top: 100px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.img-container img{
+    border-radius: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section button{
+    background-color: var(--background-color);
+    color: var(--gray-color);
+    font-family: 'Figtree-Variable';
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.section p{
+    font-family: 'Figtree-Variable';
+}
+
+.section h1{
+    font-family: 'Figtree-Variable';
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.p1{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer p{
+    padding-top: 20px;
+    font-family: 'Figtree-Variable';
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* For tablets and small laptops (screens between 750px and 1200px) */
+@media screen and (max-width: 1200px) {
+    .main {
+      width: 50%;
+      padding: 20px;
+      margin-top: 150px;
+    }
+    .section button {
+      width: 50%;
+    }
+  }
+  
+/* For mobile devices (screens 750px and smaller) */
+  @media screen and (max-width: 750px) {
+    body {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main {
+      width: 80%;
+      margin-top: 100px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 5px 5px var(--gray-color);
+    }
+  
+    .img-container img {
+      width: 100%;
+    }
+  
+    .section h1 {
+      font-size: 20px; 
+    }
+  
+    .section button {
+      width: 40%;
+    }
+  
+    .section p {
+      font-size: 16px;
+    }
+  
+    .footer img {
+      width: 50px;
+    }
+}
+  
